@@ -11,7 +11,7 @@ body {
 }
 
 .hot {
-  font-weight: 700;
+  /* font-weight: 700; */
   border-bottom: 3px solid rgb(255, 140, 0);
 }
 
@@ -32,8 +32,17 @@ mark {
   display: inline-block;
 }
 
-.header .arrow {
+.section-arrow {
   cursor: pointer;
+  margin-left: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: none;
+}
+
+.section-arrow img {
+  height: 10px;
+  display: inline-block;
 }
 
 .biolinks ul {
@@ -67,7 +76,7 @@ mark {
 
 .content .title {
   display: inline-block;
-  width: 200px;
+  width: 150px;
   font-weight: bold;
 }
 
@@ -92,6 +101,11 @@ mark {
   color: rgb(255, 140, 0);
   text-decoration: none;
   border-bottom: 1px solid rgb(42, 52, 57);
+}
+
+/* Exception for section arrows within content */
+.content li a.section-arrow {
+  border-bottom: none;
 }
 
 /* Rotate */
